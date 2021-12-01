@@ -1,49 +1,50 @@
 * {
     font-family: 'Montserrat Alternates', sans-serif;
-    margin: 5px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body { 
-    background-color: white;
+    /* background-color: white; */
 }
 
 ul{
     list-style: none;
 }
 
-header {
-    background-color: #86E775 ;
+header, footer {
+    background-color: black;
+}
 
+main {
+    min-height: 100vh;
 }
 
 
 .cabecera {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .contenedor{
-
     max-width: 95%;
     margin: 0 auto;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    
-    
-
 }
 
 .logotipo{
-font-size: 15px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logotipoimagen{
-    width: 170px;
-    height: 100px;
+    width: 65px;
+    height: 40px;
 }
 
 .navegacion___lista{
@@ -55,25 +56,156 @@ align-items: center;
 }
 
 .navegacion__enlace{
-    background-color: white;
-    display: flex;
-    justify-content:center;
+    background-color: rgb(9, 168, 9);
+    text-align: center;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 30px;
     border-radius: 20px;
+    color: white;
 }
 
-.piepagina{
-    color: hsl(111, 60%, 46%);
-    text-decoration:overline;
+.seccion1y2{
+    min-height: 100vh;
+    padding: 32px;
+}
+
+.seccion1__titulo {
+    font-style: italic;
+    margin-bottom: 32px;
+    color: green;
+    
+}
+
+.seccion1__subtitulo {
+    margin-bottom: 32px;
+}
+
+.seccion1__parrafo {
+    margin-bottom: 32px;
+}
+
+.seccion1__img {
+    width: 350px;
+    height: 250px;
+}
+
+.seccion1__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.seccion2 {
+    background-image: url('../Imagenes/vector-DEC-2020-94_generated.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:unset;
+    background-attachment:fixed;
+    min-height: 300px;
+    width: 100%;
+}
+
+.seccion2__titulo {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: white 5px 5px 5px;
+    
+}
+.seccion__parrafo{
+    color: rgb(55, 219, 55);
+    text-align: center;
+    padding: 5%;
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+    
+}
+
+.footer {
+    padding: 32px;
+}
+
+.footer__titulo {
+    color: white;
+    text-decoration: overline;
+}
+
+.footer__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
 }
 
 .redes{
-    display: flex;
-    justify-content:center;
-    align-items:center;
     text-decoration: none;
-    background-color: #86E775;
+    background-color: black;
+    color: white;
     padding: 5px 10px;
     border-radius: 20px;
+    display: inline-block;
 }
+
+.titulohistoria{
+    margin: 50px;
+    text-align: center;
+    color: green;
+    text-decoration: overline;
+
+}
+
+.parrafos{
+    margin: 15px;
+}
+
+.imagenpercu{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: center;
+
+}
+
+.imagentraje{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    /* Estilos para las vistas pequeñas movil y tablet */
+    .cabecera {
+        padding: 20px;
+    }
+    
+    .cabecera .contenedor {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cabecera img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cabecera h1 {
+        font-size: 20px;
+    }
+
+    .cabecera .navegacion__enlace {
+        display: block;
+    }
+
+    .seccion1__img {
+        width: 100%;
+    }
+}
+
